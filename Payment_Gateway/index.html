@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manga Premium Access</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-purple-900 via-indigo-900 to-black text-white min-h-screen flex items-center justify-center px-4">
+
+  <div class="w-full max-w-md bg-white bg-opacity-10 p-6 rounded-2xl shadow-xl backdrop-blur">
+    <h1 class="text-3xl font-bold mb-4 text-center">
+      <i class="bi bi-bookmark-star-fill mr-2 text-yellow-400"></i>Manga Premium Access
+    </h1>
+    <p class="text-center mb-6 text-white text-opacity-70 text-sm">
+      Submit your Telegram username and email to unlock the Razorpay payment link.
+    </p>
+
+    <!-- Form -->
+    <form id="access-form" class="space-y-4">
+      <div>
+        <label class="block mb-1 text-sm font-medium">Telegram Username</label>
+        <input type="text" name="username" required class="w-full p-2 rounded-lg text-black" placeholder="@yourhandle" />
+      </div>
+      <div>
+        <label class="block mb-1 text-sm font-medium">Email</label>
+        <input type="email" name="email" required class="w-full p-2 rounded-lg text-black" placeholder="you@example.com" />
+      </div>
+      <button type="submit" class="btn-submit w-full flex justify-center items-center gap-2">
+        <i class="bi bi-send-fill"></i> Submit
+      </button>
+    </form>
+
+    <!-- Thank You + Pay -->
+    <div id="payment-section" class="hidden mt-6 text-center">
+      <h2 class="text-xl font-semibold mb-2">Thank you!</h2>
+      <p class="text-white text-opacity-80 mb-4 text-sm">Click below to complete payment and join the premium manga channel.</p>
+      <a href="https://razorpay.me/@novelcia?amount=ZFm4ghdmeB6pF5PK8Ki64w%3D%3D" target="_blank" rel="noopener" class="btn-pay inline-flex items-center gap-2">
+
+        <i class="bi bi-wallet2"></i> Pay Now
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
